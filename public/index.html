@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portal Referensi</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #050505;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding-bottom: 75px;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 14px;
+  background: #151515;
+}
+.menu { font-size: 32px; }
+.logo { color: #42d9ff; font-weight: bold; font-size: 22px; }
+.ticker {
+  padding: 12px 8px;
+  background: #242424;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.actions { display: flex; }
+.actions button {
+  width: 50%;
+  height: 60px;
+  border: 1px solid #111;
+  font-size: 18px;
+}
+.login { background: #20c7ef; }
+.register { background: #ffca24; }
+.banner {
+  margin: 7px 0;
+  min-height: 145px;
+  padding: 20px 10px;
+  text-align: center;
+  background: linear-gradient(135deg,#163e70,#783b89,#111827);
+  border: 1px solid #37617e;
+}
+.banner h2 { color: #ffe65b; }
+.banner strong { font-size: 26px; }
+.categories {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 5px;
+  padding: 5px;
+}
+.category {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 5px 2px;
+  text-align: center;
+  font-size: 12px;
+  background: linear-gradient(#555,#292929);
+  border: 1px solid #777;
+}
+.category span { font-size: 26px; }
+.item {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 12px 8px;
+  padding: 18px 12px;
+  border: 1px solid #245b7b;
+  border-radius: 12px;
+  background: #161616;
+  font-size: 13px;
+}
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  background: #292929;
+  border-top: 1px solid #555;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 11px;
+}
+nav span {
+  display: block;
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="menu">☰</div>
+  <div class="logo">PORTAL REFERENSI</div>
+</header>
+
+<div class="ticker">
+  ✦ Selamat datang di portal referensi kami ✦
+</div>
+
+<div class="actions">
+  <button class="login" onclick="alert('Halaman login segera dibuat')">
+    LOGIN
+  </button>
+  <button class="register" onclick="alert('Halaman daftar segera dibuat')">
+    DAFTAR
+  </button>
+</div>
+
+<section class="banner">
+  <h2>PORTAL INFORMASI</h2>
+  <strong>Jelajahi Referensi</strong>
+  <p>Temukan informasi terbaru</p>
+</section>
+
+<section class="banner">
+  <h2>INFORMASI PILIHAN</h2>
+  <strong>Update Hari Ini</strong>
+</section>
+
+<div class="categories">
+  <div class="category"><span>🔥</span>Populer</div>
+  <div class="category"><span>📚</span>Artikel</div>
+  <div class="category"><span>🎯</span>Panduan</div>
+  <div class="category"><span>📰</span>Berita</div>
+  <div class="category"><span>⚽</span>Olahraga</div>
+  <div class="category"><span>🎬</span>Hiburan</div>
+  <div class="category"><span>💻</span>Teknologi</div>
+  <div class="category"><span>📌</span>Lainnya</div>
+</div>
+
+<div class="item">
+  <span>Informasi terbaru</span>
+  <span>12-10-2026</span>
+</div>
+<div class="item">
+  <span>Artikel pilihan</span>
+  <span>11-10-2026</span>
+</div>
+
+<nav>
+  <a href="#"><span>⌂</span>Home</a>
+  <a href="#"><span>▣</span>Artikel</a>
+  <a href="#"><span>▤</span>Pembayaran</a>
+  <a href="#"><span>♙</span>Akun</a>
+</nav>
+
+</body>
+</html>
